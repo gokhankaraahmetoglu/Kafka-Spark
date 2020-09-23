@@ -11,7 +11,7 @@ public class Runner {
         properties.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer");
         //producer record ile data gönderilir.
 
-        File file = new File("/home/wrantuil/Desktop/Kafka/generated.csv");
+        File file = new File(path);
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
         StringBuffer sb = new StringBuffer();
