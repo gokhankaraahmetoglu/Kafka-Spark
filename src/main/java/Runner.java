@@ -14,7 +14,6 @@ public class Runner {
         File file = new File(path);
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
-        StringBuffer sb = new StringBuffer();
         String line;
         KafkaProducer kafkaProducer = new KafkaProducer(properties);
         while ((line=br.readLine())!=null)
