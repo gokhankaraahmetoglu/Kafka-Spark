@@ -5,7 +5,7 @@ import java.util.Properties;
 public class SampleProducer {
     public SampleProducer(){
         Properties properties = new Properties();
-        properties.put("bootstrap.servers","localhost:9092"); //burası aracılığı ile bağlanıyor kafka'ya.
+        properties.put("bootstrap.servers","localhost:9092"); 
         properties.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer");
         properties.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer");
         //producer record ile data gönderilir.
@@ -20,7 +20,7 @@ public class SampleProducer {
     }
     public SampleProducer(String a){
         Properties properties = new Properties();
-        properties.put("bootstrap.servers","localhost:9092"); //burası aracılığı ile bağlanıyor kafka'ya.
+        properties.put("bootstrap.servers","localhost:9092"); 
         properties.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer");
         properties.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer");
         //producer record ile data gönderilir.
